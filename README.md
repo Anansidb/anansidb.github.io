@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
     <title>AnansiDB - Web Scraping App</title>
