@@ -66,6 +66,10 @@
             <li>Atualizações regulares com recursos aprimorados.</li>
         </ul>
 
+        <h2>Termos de Uso</h2>
+        <a href="javascript:void(0);" onclick="openPopup('termo_de_uso_sites.html')">Termos de Uso para Sites</a>
+        <a href="javascript:void(0);" onclick="openPopup('termo_de_uso_usuario.html')">Termos de Uso para Usuários</a>
+
         <h2>Últimas Versões</h2>
         <ul>
             <li><a href="https://anansidb.github.io/versions/anansidb_v1.0.exe">Versão 1.0</a> - Lançada em 01 de Janeiro de 2023</li>
@@ -74,5 +78,11 @@
             <!-- Adicione links para outras versões conforme necessário -->
         </ul>
     </main>
+    <script>
+        function openPopup(url) {
+            var popup = window.open(url, 'Termos de Uso', 'width=600,height=400');
+            popup.focus();
+        }
+    </script>
 </body>
 </html>
