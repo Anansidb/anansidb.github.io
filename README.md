@@ -1,68 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AnansiDB - Coleta de Dados Web</title>
+    <title>AnansiDB - Web Scraping App</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2a3c56;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
         }
         h1 {
-            color: #1473E6;
-        }
-        h2 {
-            color: #333;
+            font-size: 36px;
         }
         p {
-            line-height: 1.6;
+            font-size: 18px;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-top: 20px;
         }
         ul {
-            list-style-type: disc;
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
         }
         a {
+            color: #2a3c56;
             text-decoration: none;
-            color: #0078D4;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>AnansiDB - Coleta de Dados Web</h1>
-    <p>Bem-vindo ao AnansiDB, a ferramenta definitiva para coleta de dados da web. Com o AnansiDB, você pode extrair informações valiosas de diversos sites da internet de forma rápida e eficiente.</p>
+    <header>
+        <h1>AnansiDB - Web Scraping App</h1>
+        <p>Obtenha os dados que você precisa com facilidade.</p>
+    </header>
+    <main>
+        <h2>Sobre o AnansiDB</h2>
+        <p>O AnansiDB é uma poderosa ferramenta de web scraping que permite coletar dados de uma variedade de sites da internet. Com recursos avançados e uma interface amigável, o AnansiDB simplifica o processo de coleta e análise de dados da web.</p>
 
-    <h2>Recursos do AnansiDB:</h2>
-    <ul>
-        <li>Coleta de Dados de Sites da Internet</li>
-        <li>Processamento e Análise de Dados</li>
-        <li>Exportação de Dados para Diferentes Formatos</li>
-        <li>Integração com APIs de Terceiros</li>
-        <li>Atualizações Regulares com Novos Recursos</li>
-    </ul>
+        <h2>Recursos Principais</h2>
+        <ul>
+            <li>Coleta de dados de sites da web com facilidade.</li>
+            <li>Interface intuitiva e amigável para iniciantes e profissionais.</li>
+            <li>Análise avançada de dados para insights valiosos.</li>
+            <li>Atualizações regulares com recursos aprimorados.</li>
+        </ul>
 
-    <h2>Últimas Versões</h2>
-    <ul>
-        <li>
-            <strong>Versão 2.0 (Março 2023)</strong><br>
-            <p>Adicionado suporte a novos sites, interface aprimorada e correções de bugs. <a href="https://anansidb.github.io/updates/app_v2.0.zip">Download</a></p>
-        </li>
-        <li>
-            <strong>Versão 1.5 (Janeiro 2023)</strong><br>
-            <p>Integração com API de análise de dados e exportação aprimorada. <a href="https://anansidb.github.io/updates/app_v1.5.zip">Download</a></p>
-        </li>
-        <li>
-            <strong>Versão 1.0 (Setembro 2022)</strong><br>
-            <p>Lançamento inicial do AnansiDB. Coleta de dados de sites da web e exportação para CSV. <a href="https://anansidb.github.io/updates/app_v1.0.zip">Download</a></p>
-        </li>
-    </ul>
-
-    <h2>Requisitos do Sistema:</h2>
-    <p>Para executar o AnansiDB em seu sistema, você precisará atender aos seguintes requisitos mínimos:</p>
-    <ul>
-        <li>Sistema Operacional: Windows 10, macOS 10.12 ou posterior, ou Linux</li>
-        <li>Processador: Processador dual-core ou superior</li>
-        <li>Memória RAM: 4 GB de RAM ou superior</li>
-        <li>Conexão à Internet</li>
-    </ul>
-
-    <p>Para obter mais informações e suporte, entre em contato com nossa equipe de suporte em <a href="mailto:suporte@anansidb.com">suporte@anansidb.com</a>.</p>
+        <h2>Últimas Versões</h2>
+        <ul>
+            <li><a href="https://anansidb.github.io/updates/anansidb_v1.0.zip">Versão 1.0</a> - Lançada em 01 de Janeiro de 2023</li>
+            <li><a href="https://anansidb.github.io/updates/anansidb_v1.1.zip">Versão 1.1</a> - Lançada em 15 de Fevereiro de 2023</li>
+            <li><a href="https://anansidb.github.io/updates/anansidb_v1.2.zip">Versão 1.2</a> - Lançada em 30 de Março de 2023</li>
+            <!-- Adicione links para outras versões conforme necessário -->
+        </ul>
+    </main>
 </body>
 </html>
