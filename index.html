@@ -2,8 +2,62 @@
 <html>
 <head>
     <title>AnansiDB - Web Scraping App</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #e6e6e6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #004d99;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 30px;
+            margin: 0;
+        }
+        p, li {
+            font-size: 16px;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        h2 {
+            color: #004d99;
+            font-size: 24px;
+        }
+        ul, ol {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -52,5 +106,11 @@
     <footer>
         <p>© 2023 AnansiDB. All rights reserved.</p>
     </footer>
+    <script>
+        function openPopup(url) {
+            var popup = window.open(url, 'Termos de Uso', 'width=600,height=400');
+            popup.focus();
+        }
+    </script>
 </body>
 </html>
