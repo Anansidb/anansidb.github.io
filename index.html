@@ -7,19 +7,19 @@
             font-family: 'Segoe UI', Arial, sans-serif;
             background-color: #e6e6e6;
             margin: 0;
-            padding: 50px;
+            padding-bottom: 60px; /* Espaço suficiente para não sobrepor ao footer */
             color: #333;
         }
         header {
             background-color: rgba(0, 77, 153, 0.85);
             color: white;
-            padding: 20px;
             text-align: center;
-            border-radius: 10px;
+            border-radius: 10px 10px 0 0;
         }
         h1 {
             font-size: 30px;
             margin: 0;
+            padding: 20px;
         }
         p, li {
             font-size: 16px;
@@ -43,9 +43,7 @@
         li {
             margin-bottom: 10px;
         }
-        a, button {
-            color: #0056b3;
-            text-decoration: none;
+        button {
             background-color: #004d99;
             border: none;
             padding: 10px 20px;
@@ -58,9 +56,8 @@
             font-size: 16px;
             cursor: pointer;
         }
-        a:hover, button:hover {
+        button:hover {
             background-color: #0056b3;
-            text-decoration: underline;
         }
         .contact {
             text-align: center;
@@ -74,7 +71,7 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-            border-radius: 10px;
+            border-radius: 10px 10px 0 0;
         }
     </style>
 </head>
@@ -90,7 +87,7 @@
         <section>
             <button onclick="openPopup('termos/termo_de_uso_sites.html')">Termos para Sites</button>
             <button onclick="openPopup('termos/termo_de_uso_usuario.html')">Termos para Usuários</button>
-            <a href="https://www.dropbox.com/scl/fi/9w90b0tzacu0oun0k5uvn/AnansiDB-Setup-1.0.0.exe?rlkey=c6c1j6gpii8mlf1ui1v99cszx&dl=0" target="_blank">Baixe o AnansiDB</a>
+            <button onclick="window.location.href='https://www.dropbox.com/scl/fi/9w90b0tzacu0oun0k5uvn/AnansiDB-Setup-1.0.0.exe?rlkey=c6c1j6gpii8mlf1ui1v99cszx&dl=0'">Baixe o AnansiDB</button>
         </section>
 
         <section id="about">
