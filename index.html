@@ -7,14 +7,14 @@
             font-family: 'Segoe UI', Arial, sans-serif;
             background-color: #e6e6e6;
             margin: 0;
-            padding-bottom: 60px; /* Espaço suficiente para não sobrepor ao footer */
+            padding-bottom: 60px;
             color: #333;
         }
         header {
             background-color: rgba(0, 77, 153, 0.85);
             color: white;
             text-align: center;
-            padding: 7px; /* Reduzido em 20% */
+            padding: 7px;
         }
         h1 {
             font-size: 30px;
@@ -55,6 +55,14 @@
             font-size: 16px;
             cursor: pointer;
         }
+        .download-button {
+            width: 200%; /* Aumentado em 100% */
+            margin: auto;
+            display: block;
+        }
+        .term-button {
+            width: 80%; /* Reduzido em 20% */
+        }
         button:hover {
             background-color: #0056b3;
         }
@@ -66,7 +74,7 @@
             background-color: rgba(51, 51, 51, 0.85);
             color: white;
             text-align: center;
-            padding: 6px; /* Reduzido em 20% */
+            padding: 6px;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -82,17 +90,17 @@
         <div class="contact">
             <p>Contate-nos: <a href="mailto:anansidb@anansidb.com">anansidb@anansidb.com</a></p>
         </div>
-        <section>
-            <button onclick="openPopup('termos/termo_de_uso_sites.html')">Termos para Sites</button>
-            <button onclick="openPopup('termos/termo_de_uso_usuario.html')">Termos para Usuários</button>
-            <button onclick="window.location.href='https://www.dropbox.com/scl/fi/tebo7mhi4jmeyjn6n1wv0/AnansiDB-Setup-1.0.0.exe'">Baixe o AnansiDB</button>
+        <section style="text-align: center;">
+            <button class="download-button" onclick="window.location.href='https://www.dropbox.com/scl/fi/tebo7mhi4jmeyjn6n1wv0/AnansiDB-Setup-1.0.0.exe'">Baixe o AnansiDB</button>
+            <div>
+                <button class="term-button" onclick="openPopup('termos/termo_de_uso_sites.html')">Termos para Sites</button>
+                <button class="term-button" onclick="openPopup('termos/termo_de_uso_usuario.html')">Termos para Usuários</button>
+            </div>
         </section>
-
         <section id="about">
             <h2>Sobre o AnansiDB</h2>
             <p>Fortaleça sua coleta de dados com o AnansiDB, uma ferramenta intuitiva e poderosa para web scraping. Perfeito tanto para iniciantes quanto para profissionais, o AnansiDB simplifica a coleta e análise de dados.</p>
         </section>
-
         <section id="features">
             <h2>Principais Recursos</h2>
             <ul>
@@ -102,7 +110,6 @@
                 <li>Atualizações regulares com capacidades aprimoradas.</li>
             </ul>
         </section>
-
         <section id="usage">
             <h2>Como Usar o AnansiDB</h2>
             <ol>
