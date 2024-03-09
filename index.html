@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
-    <title>AnansiDB - Aplicativo de Web Scraping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnansiDB - Transforme Dados em Insights</title>
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
             background-color: #e6e6e6;
             margin: 0;
-            padding-bottom: 60px; /* Espaço suficiente para não sobrepor ao footer */
+            padding-bottom: 60px;
             color: #333;
         }
         header {
             background-color: #003366;
             color: white;
             text-align: center;
-            padding: 5px; /* Reduzido em 20% */
+            padding: 5px;
         }
         h1 {
             font-size: 30px;
@@ -42,7 +44,7 @@
         li {
             margin-bottom: 10px;
         }
-        button {
+        button, .api-link {
             background-color: #003366;
             border: none;
             padding: 10px 20px;
@@ -54,13 +56,9 @@
             color: white;
             font-size: 16px;
             cursor: pointer;
+            text-decoration: none;
         }
-        .download-button {
-            font-size: 20px;
-            padding: 15px 30px;
-            background-color: #4CAF50;
-        }
-        button:hover {
+        .api-link:hover, button:hover {
             background-color: #0056b3;
         }
         .contact {
@@ -71,7 +69,7 @@
             background-color: rgba(51, 51, 51, 0.85);
             color: white;
             text-align: center;
-            padding: 3px; /* Reduzido em 20% */
+            padding: 3px;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -84,56 +82,46 @@
 <body>
     <header>
         <h1>AnansiDB - Transforme Dados em Insights</h1>
-        <p>Raspagem de informações facilitada.</p>
+        <p>Obtenção de reviews da Play Store simplificada.</p>
     </header>
     <main>
         <div class="contact">
             <p>Contate-nos: <a href="mailto:anansidb@anansidb.com">anansidb@anansidb.com</a></p>
         </div>
         <section class="button-group">
-            <button class="download-button" onclick="window.location.href='https://anansidb.s3.amazonaws.com/AnansiDB+Setup+1.0.0.exe'">Baixe o AnansiDB</button>
-            <div>
-                <button onclick="openPopup('termos/termo_de_uso_sites.html')">Termos para Sites</button>
-                <button onclick="openPopup('termos/termo_de_uso_usuario.html')">Termos para Usuários</button>
-            </div>
+            <a class="api-link" href="https://api.anansidb.com/playstore">Acesse a AnansiDB API</a>
         </section>
 
         <section id="about">
             <h2>Sobre o AnansiDB</h2>
-            <p>Fortaleça sua coleta de dados com o AnansiDB, uma ferramenta intuitiva e poderosa para web scraping. AnansiDB simplifica a coleta e análise de dados.</p>
+            <p>Com a AnansiDB API, transforme facilmente links da Play Store em dados analisáveis. Acesse insights valiosos de reviews de usuários com apenas alguns cliques.</p>
         </section>
 
         <section id="features">
             <h2>Principais Recursos</h2>
             <ul>
-                <li>Extração fácil de dados de reviews de apps playstore.</li>
-                <li>Interface amigável, ideal para todos os níveis de habilidade.</li>
-                <li>Possibilidade de salvar tabelas em xlsx.</li>
-                <li>Compilador de SQLite para manipulação de tabelas.</li>
-                <li>Análise de dados avançada para insights significativos.</li>
-                <li>Atualizações regulares com capacidades aprimoradas.</li>
+                <li>Acesso imediato a reviews de usuários da Play Store.</li>
+                <li>Facilidade de obtenção e análise de dados.</li>
+                <li>Exportação de dados em formato XLSX para análise offline.</li>
+                <li>Serviço hospedado, sem necessidade de instalação de software.</li>
+                <li>Análise avançada de dados para insights acionáveis.</li>
+                <li>Interface intuitiva, ideal para todos os níveis de habilidade.</li>
             </ul>
         </section>
 
         <section id="usage">
-            <h2>Como Usar o AnansiDB</h2>
+            <h2>Como Usar a AnansiDB API</h2>
             <ol>
-                <li>Insira a URL do aplicativo Playstore no campo fornecido.</li>
-                <li>Clique em "Iniciar Coleta de Dados".</li>
-                <li>Os dados serão coletados e armazenados em SQLite, podendo salvar em xlsx.</li>
-                <li>A aplicação AnansiDB estará sempre sendo melhorada com maior diversidade de opções e facilidade de uso.</li>
-                <li>Sinta-se livre para nos enviar um e-mail com sugestões e dúvidas.</li>
+                <li>Acesse <a href="https://api.anansidb.com/playstore">api.anansidb.com/playstore</a>.</li>
+                <li>Insira o link da Play Store do aplicativo desejado.</li>
+                <li>Obtenha e analise os reviews de usuários facilmente.</li>
+                <li>Exporte os dados coletados em formato XLSX para uma análise mais profunda.</li>
+                <li>Para assistência ou sugestões, entre em contato conosco.</li>
             </ol>
         </section>
     </main>
     <footer>
-        <p>© 2023 AnansiDB. Todos os direitos reservados.</p>
+        <p>© 2024 AnansiDB. Todos os direitos reservados.</p>
     </footer>
-    <script>
-        function openPopup(url) {
-            var popup = window.open(url, 'Termos de Uso', 'width=600,height=400');
-            popup.focus();
-        }
-    </script>
 </body>
 </html>
