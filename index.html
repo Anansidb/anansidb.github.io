@@ -45,7 +45,7 @@
             margin-bottom: 10px;
         }
         button, .api-link {
-            background-color: #003366;
+            background-color: #4CAF50; /* Verde para o link da API, igual ao botão de download anterior */
             border: none;
             padding: 10px 20px;
             text-align: center;
@@ -90,6 +90,10 @@
         </div>
         <section class="button-group">
             <a class="api-link" href="https://api.anansidb.com/playstore">Acesse a AnansiDB API</a>
+            <div>
+                <button onclick="window.open('termos/termo_de_uso_sites.html', 'Termos de Uso', 'width=600,height=400')">Termos para Sites</button>
+                <button onclick="window.open('termos/termo_de_uso_usuario.html', 'Termos de Uso', 'width=600,height=400')">Termos para Usuários</button>
+            </div>
         </section>
 
         <section id="about">
@@ -123,5 +127,11 @@
     <footer>
         <p>© 2024 AnansiDB. Todos os direitos reservados.</p>
     </footer>
+    <script>
+        function openPopup(url) {
+            var popup = window.open(url, 'Termos de Uso', 'width=600,height=400');
+            popup.focus();
+        }
+    </script>
 </body>
 </html>
